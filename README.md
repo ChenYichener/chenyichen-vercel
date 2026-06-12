@@ -5,6 +5,8 @@ Personal static publishing hub deployed with Vercel.
 ## Structure
 
 - `index.html`: homepage matching the ChenYichen Lab reference layout.
+- `assets/home-cards.json`: data source for the dynamic homepage collection cards.
+- `assets/site.js`: client-side renderer for homepage collection cards.
 - `articles/`: standalone articles and essays.
 - `prototypes/`: interactive prototypes and product demos.
 - `sites/`: independent static websites, one folder per site.

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "articles",
+    "title": "Articles",
+    "icon": "article",
+    "href": "/articles/",
+    "items": [
+      { "title": "如何打造一个可持续的写作系统", "meta": "May 18" },
+      { "title": "从输入到输出：我的知识管理方法", "meta": "May 10" },
+      { "title": "专注力：少做，如何更好地学习与创造", "meta": "Apr 28" }
+    ]
+  },
+  {
+    "id": "prototypes",
+    "title": "Prototypes",
+    "icon": "prototype",
+    "href": "/prototypes/",
+    "items": [
+      { "title": "Daily Notes Web App", "meta": "May 16" },
+      { "title": "AI 词汇卡片生成器", "meta": "May 02" },
+      { "title": "学习计划制定器", "meta": "Apr 21" }
+    ]
+  },
+  {
+    "id": "sites",
+    "title": "Sites",
+    "icon": "site",
+    "href": "/sites/",
+    "items": [
+      { "title": "个人作品集站点", "meta": "May 12" },
+      { "title": "阅读笔记站点", "meta": "Apr 30" },
+      { "title": "英语学习资源站", "meta": "Apr 11" }
+    ]
+  },
+  {
+    "id": "english-level-up-tips",
+    "title": "English Level Up Tips",
+    "icon": "book",
+    "href": "/sites/english-level-up-tips/",
+    "items": [
+      { "title": "认知篇", "meta": "Part 1" },
+      { "title": "单词篇", "meta": "Part 1" },
+      { "title": "听力篇", "meta": "Part 1" }
+    ]
+  }
+]

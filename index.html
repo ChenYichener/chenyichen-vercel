@@ -41,74 +41,8 @@
         <img class="hero-image" src="/assets/home-still-life.png" alt="Books, plant, and coffee cup on a white desk.">
       </section>
 
-      <section class="dashboard-grid" aria-label="Content collections">
-        <article id="articles" class="home-card">
-          <div class="card-head">
-            <div class="card-title">
-              <span class="card-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h7l3 3v13H6V4h2Z"/><path d="M14 4v4h4M9 13h6M9 17h5"/></svg>
-              </span>
-              <h2>Articles</h2>
-            </div>
-            <a href="/articles/">View all <span>→</span></a>
-          </div>
-          <ul class="item-list">
-            <li><span>如何打造一个可持续的写作系统</span><time>May 18</time></li>
-            <li><span>从输入到输出：我的知识管理方法</span><time>May 10</time></li>
-            <li><span>专注力：少做，如何更好地学习与创造</span><time>Apr 28</time></li>
-          </ul>
-        </article>
-
-        <article id="prototypes" class="home-card">
-          <div class="card-head">
-            <div class="card-title">
-              <span class="card-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="M12 12 4.5 7.8M12 12l7.5-4.2M12 12v8.5"/></svg>
-              </span>
-              <h2>Prototypes</h2>
-            </div>
-            <a href="/prototypes/">View all <span>→</span></a>
-          </div>
-          <ul class="item-list">
-            <li><span>Daily Notes Web App</span><time>May 16</time></li>
-            <li><span>AI 词汇卡片生成器</span><time>May 02</time></li>
-            <li><span>学习计划制定器</span><time>Apr 21</time></li>
-          </ul>
-        </article>
-
-        <article id="sites" class="home-card">
-          <div class="card-head">
-            <div class="card-title">
-              <span class="card-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3c2.4 2.5 3.6 5.5 3.6 9S14.4 18.5 12 21c-2.4-2.5-3.6-5.5-3.6-9S9.6 5.5 12 3Z"/></svg>
-              </span>
-              <h2>Sites</h2>
-            </div>
-            <a href="/sites/">View all <span>→</span></a>
-          </div>
-          <ul class="item-list">
-            <li><span>个人作品集站点</span><time>May 12</time></li>
-            <li><span>阅读笔记站点</span><time>Apr 30</time></li>
-            <li><span>英语学习资源站</span><time>Apr 11</time></li>
-          </ul>
-        </article>
-
-        <article class="home-card">
-          <div class="card-head">
-            <div class="card-title">
-              <span class="card-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H20v17H7.5A3.5 3.5 0 0 0 4 22V5.5Z"/><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H20"/></svg>
-              </span>
-              <h2>English Level Up Tips</h2>
-            </div>
-            <a href="/sites/english-level-up-tips/">View all <span>→</span></a>
-          </div>
-          <ul class="item-list">
-            <li><span>认知篇</span><time>Part 1</time></li>
-            <li><span>单词篇</span><time>Part 1</time></li>
-            <li><span>听力篇</span><time>Part 1</time></li>
-          </ul>
-        </article>
+      <section class="dashboard-grid" aria-label="Content collections" data-home-cards>
+        <p class="card-loading">Loading collections...</p>
       </section>
 
       <section class="learning-path" aria-labelledby="learning-title">
@@ -144,5 +78,6 @@
         <a href="/">Notes</a>
       </nav>
     </footer>
+    <script src="/assets/site.js" defer></script>
   </body>
 </html>

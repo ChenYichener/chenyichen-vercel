@@ -185,11 +185,20 @@ svg {
 }
 
 .home-card,
-.learning-path {
+.learning-path,
+.card-loading {
   border: 1px solid var(--line);
   border-radius: 4px;
   background: var(--paper);
   box-shadow: 0 1px 0 rgba(31, 45, 54, 0.02);
+}
+
+.card-loading {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 24px;
+  color: #6f7d87;
+  font-size: 14px;
 }
 
 .card-head {
