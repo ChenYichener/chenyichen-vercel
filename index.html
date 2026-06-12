@@ -1,59 +1,127 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello World</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        line-height: 1.5;
-      }
-
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: grid;
-        place-items: center;
-        background: #f6f7f9;
-        color: #171717;
-      }
-
-      main {
-        width: min(92vw, 720px);
-        text-align: center;
-      }
-
-      h1 {
-        margin: 0 0 12px;
-        font-size: clamp(42px, 8vw, 88px);
-        font-weight: 750;
-        letter-spacing: 0;
-      }
-
-      p {
-        margin: 0;
-        color: #5f6368;
-        font-size: 18px;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          background: #101114;
-          color: #f4f4f5;
-        }
-
-        p {
-          color: #a1a1aa;
-        }
-      }
-    </style>
+    <title>ChenYichen Lab</title>
+    <meta
+      name="description"
+      content="ChenYichen Lab is a personal publishing hub for articles, prototypes, static sites, and learning guides."
+    >
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/site.css">
   </head>
-  <body>
+  <body class="home-page">
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="ChenYichen Lab home">
+        <span class="brand-mark">CY</span>
+        <span>ChenYichen Lab</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#collections">Collections</a>
+        <a href="/sites/english-level-up-tips/">English Guide</a>
+        <a href="#workflow">Workflow</a>
+      </nav>
+    </header>
+
     <main>
-      <h1>Hello World</h1>
-      <p>Deployed with Vercel.</p>
+      <section class="home-hero">
+        <div class="hero-copy">
+          <p class="section-label">Personal publishing hub</p>
+          <h1>把文章、原型和静态网站放进一个清爽的分享中心。</h1>
+          <p>
+            这里会承载我后续要分享给别人的内容：长文章、产品原型、独立页面、实验项目和学习指南。
+            每个网站都放在自己的目录里，推送到 GitHub 后由 Vercel 自动上线。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="/sites/english-level-up-tips/">阅读英语学习指南</a>
+            <a class="button secondary" href="#collections">查看分类结构</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Publishing structure preview">
+          <div class="panel-topline">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="panel-row active">
+            <strong>sites/english-level-up-tips</strong>
+            <span>完整长阅读网站</span>
+          </div>
+          <div class="panel-row">
+            <strong>articles/</strong>
+            <span>文章与观点</span>
+          </div>
+          <div class="panel-row">
+            <strong>prototypes/</strong>
+            <span>产品原型与 Demo</span>
+          </div>
+          <div class="panel-row">
+            <strong>sites/</strong>
+            <span>不同静态网站独立归档</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="collections" class="section-block">
+        <div class="section-heading">
+          <p class="section-label">Collections</p>
+          <h2>后续内容按用途分目录。</h2>
+        </div>
+        <div class="collection-grid">
+          <a class="collection-card featured" href="/sites/english-level-up-tips/">
+            <span class="card-index">01</span>
+            <h3>English Level Up Tips</h3>
+            <p>把 byoungd 的英语学习指南整理成一个现代、可移动端阅读的长页面。</p>
+            <span class="card-link">Start reading</span>
+          </a>
+          <div class="collection-card">
+            <span class="card-index">02</span>
+            <h3>Articles</h3>
+            <p>适合放观点文章、研究笔记、公开总结和可转发的文字内容。</p>
+            <code>/articles/</code>
+          </div>
+          <div class="collection-card">
+            <span class="card-index">03</span>
+            <h3>Prototypes</h3>
+            <p>适合放交互原型、产品想法、小工具 Demo 和低成本验证页面。</p>
+            <code>/prototypes/</code>
+          </div>
+          <div class="collection-card">
+            <span class="card-index">04</span>
+            <h3>Sites</h3>
+            <p>每个独立静态网站一个子目录，互不干扰，方便持续扩展。</p>
+            <code>/sites/{project}/</code>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="section-block workflow-band">
+        <div class="section-heading">
+          <p class="section-label">Publish flow</p>
+          <h2>更新方式保持简单。</h2>
+        </div>
+        <ol class="flow-list">
+          <li>
+            <span>1</span>
+            <p>在对应目录里新增或修改内容。</p>
+          </li>
+          <li>
+            <span>2</span>
+            <p>提交并推送到 GitHub 的 main 分支。</p>
+          </li>
+          <li>
+            <span>3</span>
+            <p>Vercel 自动部署，分享线上地址即可。</p>
+          </li>
+        </ol>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <span>ChenYichen Lab</span>
+      <a href="https://github.com/ChenYichener/chenyichen-vercel">GitHub Repository</a>
+    </footer>
   </body>
 </html>
